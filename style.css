@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f3ff;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #8B5CF6, #A855F7);
+  color: white;
+  padding: 10px;
+}
+
+.logo { height: 40px; }
+
+.card {
+  background: white;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card input, .card textarea, .card button, .modal-content input, .modal-content textarea, .modal-content button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #8B5CF6;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover { background: #6D28D9; }
+button.danger { background: #EF4444; }
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #8B5CF6;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal.active { display: flex; }
+
+video {
+  width: 100%;
+  border-radius: 10px;
+}
